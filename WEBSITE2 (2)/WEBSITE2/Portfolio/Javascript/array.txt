@@ -1,0 +1,69 @@
+Push and Pop
+
+	-Push: use to add to the end of array
+		var colors = ["red", "blue", "yellow"];
+		colors.push("green");
+		//["red", "blue", "yellow", "green"]
+			S.N: returns array size
+			
+			
+	-Pop: removes last array element
+		colors.pop()
+		// returns green: last array element and removes it
+		colors
+		  ["red", "blue", "yellow"]
+		  
+Shift and Unshift
+	
+		-shift removes first item in array
+			var colors = ["red", blue"];
+				colors.shift();
+					//returns removed element
+				var col = colors.shift() --> "red"
+				//call colors
+					["blue"]
+		
+		
+		-unshift adds to front of array
+			var colors = ["red", 2];
+			colors.unshift("blue")  //doesn't return a value
+				//calls colors
+			colors ["blue", red" 2]
+			
+			
+IndexOf
+
+	- finds the index of an item in the array
+	
+	var friends = ["joe", "jess", "phylicia", "tony"];
+	
+	//returns indexOf
+	friends.indexOf("joe"); // 0
+	friends.indexOf("phylicia"); //2
+	
+	//returns -1 if element not present
+	friends.indexOf("mike"); // -1
+	
+	
+Slice
+
+	- slice() to copy parts of an array
+	
+	var fruits = ["orange", "banana", "lemon", "mango"];
+	//use slice to copy 2nd and 3rd fruits
+	//specify index where new array starts and where it ends 
+	var citrus = fruits.slice(1, 3);
+	
+	//it does not alter original array
+	//citrus contained "banana", "lemon"
+	//fruits contains "orange", "banana", "lemon", "mango"
+	
+	//can copy entire array
+	citrus = fruits.slice();
+	//both arrays citrus = ["orange", "banana", "lemon", "mango"];
+
+Splice 
+	- .Splice(index user provided, how many items following index to delete)
+	// list.splice(arr, 1);
+	// console.log(“Item Deleted”);
+	
